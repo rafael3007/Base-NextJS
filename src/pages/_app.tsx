@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components"
 
 import { AppProps} from 'next/app'
 import theme from '../styles/theme'
+import { Container } from '../styles/pages/home'
 
 const  MyApp: React.FC<AppProps> =({ Component, pageProps }) => {
   return (

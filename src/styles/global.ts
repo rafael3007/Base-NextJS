@@ -10,7 +10,8 @@ export default createGlobalStyle`
 
     body {
         background: ${props => props.theme.colors.background};
-        color: #e1e1e6;
-
+        color: ${props => props.theme.colors.text};
+        font: 400 16px Roboto, sans-serif;
     }
+
 `;

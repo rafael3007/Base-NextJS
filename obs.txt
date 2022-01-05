@@ -1,0 +1,1 @@
+babel-plugin-inline-react-svg para a inserção de svg no projeto
