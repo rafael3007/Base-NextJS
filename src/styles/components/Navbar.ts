@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
-
+//ajustar o nav
 export const NavBar = styled.div`
+    width: 100%;
+    z-index: 0;
+    margin-top: -80px;
     position: fixed;
+
     nav{
         background: ${props => props.theme.colors.background};
         height: 80px;
-        width: 100%;
         display: flex;
-        flex: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
 
 
-    }
-    div {
-        flex: 7;
     }
 
     img.logo {
@@ -28,6 +29,7 @@ export const NavBar = styled.div`
         margin-right: 10px;
         display: flex;
         margin-top: 20px;
+        padding-left: 20%;
 
     }
 
@@ -46,6 +48,9 @@ export const NavBar = styled.div`
 
     .menu.active, .menu:hover {
         background: #FFF;
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
         transition: 0.5s;
         color: ${props => props.theme.colors.background};
     }
